@@ -22,5 +22,5 @@ body {
   background-size: cover;
   overflow: hidden;
   margin: 0;
-  overflow: scroll;
+  overflow-y: scroll;
 }
