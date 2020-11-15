@@ -54,7 +54,14 @@ body {
   width: 100%;
   text-align: center;
 }
-
+.lv1 {
+  font-family: "Teko", sans-serif;
+  font-weight: lighter;
+  font-size: 0.33em;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  text-align: center;
+}
 .clock {
   width: 100%;
   margin: 0;
