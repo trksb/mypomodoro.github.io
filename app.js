@@ -85,6 +85,7 @@ function startTimer(duration, display) {
           startTimer(pomodoro, display);
           isClicked = true;
           myPlay();
+          fetchmotive();
           move();
         }
       }
