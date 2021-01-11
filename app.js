@@ -14,9 +14,9 @@ function a() {
     );
   };
 }
-function donate() {
-  setTimeout(a, 7000);
-}
+// function donate() {
+//   setTimeout(a, 7000);
+// }
 
 function breake() {
   alert("Let's take a break");
