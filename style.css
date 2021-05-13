@@ -1,13 +1,29 @@
 body {
   background-color: black;
-/*   background-image: url(https://i.imgur.com/kgRsE2D.jpg); */
-/*   background-image: url(https://i.imgur.com/SPLqa6T.jpeg); */
+  /*   background-image: url(https://i.imgur.com/kgRsE2D.jpg); */
+  background-image: url(https://i.imgur.com/SPLqa6T.jpeg);
   background-repeat: no-repeat;
   height: 100%;
   background-position: center;
   background-size: cover;
   overflow: hidden;
   margin: 0;
+  text-align: center;
+}
+
+#canvas {
+
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.ball {
+  margin: 0;
+  position: absolute;
+  display: inline-block;
+  font-size: 4em;
+  letter-spacing: 4px;
 }
 
 #sudo {
@@ -85,7 +101,7 @@ span {
 .motivdiv {
   margin-top: 10px !important;
   margin-bottom: 15px !important;
-  height: 100%;
+  height: 20%;
   width: 95%;
   margin: auto;
 }
@@ -122,8 +138,8 @@ span {
   }
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    overflow-y: scroll;
+  @media only screen and (max-width: 600px) {
+    body {
+      overflow-y: scroll;
+    }
   }
-}
