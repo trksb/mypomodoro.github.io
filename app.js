@@ -7,23 +7,10 @@ let pomodoro = 1500;
 let isClicked = false;
 let motiv = document.getElementById("motiveh");
 let words;
-function a() {
-  myprog.onmouseover = () => {
-    alert(
-      "You can make a donation on my bitcoin wallet : bc1qjrprrxea8tzysj6m6jfvyyq5yu3mvgj3vuwfu8"
-    );
-  };
-  
-}
-// function donate() {
-//   setTimeout(a, 7000);
-// }
 
 function breake() {
   alert("Let's take a break");
 }
-
-window.onload = () => donate();
 
 function fetchmotive() {
   fetch("https://type.fit/api/quotes")
@@ -164,24 +151,24 @@ var canvas = {
   },
 };
 
-var Ball = {
+var tmads = {
   create: function (color, dx, dy) {
-    var newBall = Object.create(this);
-    newBall.dx = dx;
-    newBall.dy = dy;
-    newBall.element = document.createElement("h1");
-    newBall.element.innerHTML = "MADS";
-    newBall.width = newBall.element.innerHTML.length*30;
-    newBall.height = screen.height/6;
-    newBall.element.style.fontFamily = "Teko, sans-serif";
-    newBall.element.style.color = color;
-    newBall.element.style.width = newBall.width + "px";
-    newBall.element.style.height = newBall.height + "px";
-    newBall.element.className += " ball";
-    newBall.width = parseInt(newBall.element.style.width);
-    newBall.height = parseInt(newBall.element.style.height);
-    canvas.element.appendChild(newBall.element);
-    return newBall;
+    var newname = Object.create(this);
+    newname.dx = dx;
+    newname.dy = dy;
+    newname.element = document.createElement("h1");
+    newname.element.innerHTML = "MADS";
+    newname.width = newname.element.innerHTML.length*30;
+    newname.height = screen.height/6;
+    newname.element.style.fontFamily = "Teko, sans-serif";
+    newname.element.style.color = color;
+    newname.element.style.width = newname.width + "px";
+    newname.element.style.height = newname.height + "px";
+    newname.element.className += " name";
+    newname.width = parseInt(newname.element.style.width);
+    newname.height = parseInt(newname.element.style.height);
+    canvas.element.appendChild(newname.element);
+    return newname;
   },
   moveTo: function (x, y) {
     this.element.style.left = x + "px";
@@ -197,19 +184,13 @@ var Ball = {
   },
   draw: function (x, y) {
     this.moveTo(x, y);
-    var ball = this;
+    var name = this;
     setTimeout(function () {
-      ball.changeDirectionIfNecessary(x, y);
-      ball.draw(x + ball.dx, y + ball.dy);
+      name.changeDirectionIfNecessary(x, y);
+      name.draw(x + name.dx, y + name.dy);
     }, 1000 / 60);
   },
 };
 canvas.initialize();
-var ball1 = Ball.create("red", 4, 3);
-// var ball2 = Ball.create("red", 1, 5);
-// var ball3 = Ball.create("green", 2, 2);
-// document.getElementById("ooop").innerHTML = "my text"
-ball1.draw(0, 0);
-
-// ball2.draw(20, 200);
-// ball3.draw(300, 330);
+var name1 = tmads.create("red", 4, 3);
+name1.draw(0, 0);
