@@ -18,7 +18,7 @@ body {
   overflow: hidden;
 }
 
-.ball {
+.name {
   margin: 0;
   position: absolute;
   display: inline-block;
